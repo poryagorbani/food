@@ -1,0 +1,51 @@
+* {
+    margin: 0%;
+  }
+  
+  .gridwrapper {
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+      grid-template-areas: 
+      'he he he he he he'
+      'ma ma ma ma ma ma'
+      'ar ar ar ar ar ar'
+      'as as as as as as'
+      'na na na na na na'
+      'ft ft ft ft ft ft'
+      ;
+  
+      grid-template-columns: repeat(5. 1fr);
+      grid-template-rows: repeat(8. 1fr);
+      grid-gap: 1px;
+  }
+  
+  .header {
+      grid-area: he;
+      background-color: blue;
+  }
+
+  .main {
+    grid-area: ma;
+    background: blueviolet;
+  }
+
+  .article {
+        grid-area: ar;
+        background: brown;
+  }
+
+  .aside {
+        grid-area: as;
+        background: burlywood;
+  }
+
+  .nav {
+        grid-area: na;
+        background: chartreuse;
+  }
+
+  .footer {
+        grid-area: ft;
+        background: coral;
+  }
