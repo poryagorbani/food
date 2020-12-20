@@ -1,0 +1,86 @@
+* {
+    margin: 0%;
+  }
+
+  .fullsite {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+    'he he he he he he'
+    'ar ar ar ar ar ar'
+    'ft ft ft ft ft ft'
+    ;
+  }
+    .firstpic {
+        background-image: url("headerhamburger.jpeg");
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        grid-area: he;
+      }
+
+      .logo{ 
+        margin-left: 40%;
+  
+      }
+
+      .list li{
+        font-size: 50px;
+        color: white;
+        list-style-type: none;
+        display: inline-block;
+        margin: 10px;
+        line-height: 300%;
+        margin-top: auto;
+        font-family: 'Ubuntu', sans-serif;
+        padding: 0%;
+      }
+
+      ul {
+        text-align: center;
+      }
+
+.article{
+    grid-area: ar;
+    background-color: pink;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 392px;
+}
+
+.info1{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.info2{
+margin-left: 20px;
+font-family: 'Ubuntu', sans-serif;
+font-size: 20px;
+}
+
+.nummer{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.lo{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.footer {
+
+    grid-area: ft;
+    background: linear-gradient(#848484, #1c1c1c);
+    width: 100%;
+    height: 200px;
+}
+

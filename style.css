@@ -4,48 +4,105 @@
   
   .gridwrapper {
       display: grid;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       grid-template-areas: 
       'he he he he he he'
-      'ma ma ma ma ma ma'
+      'he he he he he he'
       'ar ar ar ar ar ar'
       'as as as as as as'
-      'na na na na na na'
       'ft ft ft ft ft ft'
       ;
   
-      grid-template-columns: repeat(5. 1fr);
-      grid-template-rows: repeat(8. 1fr);
-      grid-gap: 1px;
+
+      grid-gap: 0px;
+      overflow: hidden;
   }
   
-  .header {
+  .firstpic {
+      background-image: url("headerhamburger.jpeg");
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
       grid-area: he;
-      background-color: blue;
-  }
+    }
 
-  .main {
-    grid-area: ma;
-    background: blueviolet;
-  }
+    .logo{ 
+      margin-left: 40%;
+
+    }
+
+    .list li{
+      font-size: 50px;
+      color: white;
+      list-style-type: none;
+      display: inline-block;
+      margin: 10px;
+      line-height: 300%;
+      margin-top: auto;
+      font-family: 'Ubuntu', sans-serif;
+      padding: 0%;
+    }
+
+      ul {
+      text-align: center;
+      }
+
+
 
   .article {
+      width: 100%;
+      height: 392px;
         grid-area: ar;
-        background: brown;
+        background: white;
   }
 
-  .aside {
+  
+.article h5 {
+      padding-top: 60px;
+      padding-left: 30px;
+      font-size: 45px;
+      font-family: 'Ubuntu', sans-serif;
+}
+
+.list2{
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 30px;
+      list-style-type: none;
+      padding-top: 20px;
+      float: left;
+}
+
+.lorem{
+      display: inline-block;
+      float: right;
+      width: 50%;
+      padding-top: 20px;
+      font-size: 30px;
+      font-family: 'Ubuntu', sans-serif;
+}
+
+.aside {
+      background-image: url("img/burger2.jpeg");
         grid-area: as;
-        background: burlywood;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 392px;
   }
 
-  .nav {
-        grid-area: na;
-        background: chartreuse;
-  }
+.lorem2{
+      width: 100%;
+      padding-top: 20px;
+      font-size: 30px;
+      font-family: 'Ubuntu', sans-serif;
+}
 
   .footer {
+
         grid-area: ft;
-        background: coral;
+        background: linear-gradient(#848484, #1c1c1c);
+        width: 100%;
+        height: 200px;
   }
